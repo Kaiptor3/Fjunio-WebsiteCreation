@@ -1,0 +1,18 @@
+{
+  "name": "fjunio---webcreation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass main.scss main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Fjunio-WebsiteCreation"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.80.6"
+  }
+}
