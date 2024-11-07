@@ -1,9 +1,14 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #000000;
   color: #cdcdcd;
-  font-family: "Montserrat";
+  
 }
 
 main {
@@ -15,10 +20,6 @@ main {
 p {
   font-size: 18px;
   line-height: 28px;
-}
-
-* {
-  scroll-behavior: smooth;
 }
 
 /* Menu code starts here */
