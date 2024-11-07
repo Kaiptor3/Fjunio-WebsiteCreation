@@ -13,6 +13,7 @@ body {
 .logo {
   position: absolute;
   right: 0;
+  top: 2%;
   width: 80px;
 }
 .logo img {
