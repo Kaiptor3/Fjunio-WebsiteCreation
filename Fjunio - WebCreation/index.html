@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <header>
     <nav role="navigation">
@@ -48,16 +48,12 @@
     </div>
   </header>
   <body>
-    <section class="textvid">
-      <body>
-        <div class="container">
-          <p>
-            <span class="phrase">Transformamos ideias em sites impactantes:</span><br>
-            <span class="phrase">feitos à mão em HTML, CSS e Javascript para</span><br>
-            <span class="phrase">máxima performance e estilo!</span>
-        </p>                   
-        </div>
-    </section>
+    <div class="container py-5">
+      <div class="output" id="output">
+        <h1 class="cursor"></h1>
+        <p></p>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
