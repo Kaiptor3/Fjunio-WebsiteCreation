@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   scroll-behavior: smooth;
   font-family: "Montserrat";
@@ -145,4 +146,67 @@ p {
 
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+/* Container settings */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding-left: 20px; /* Ajuste conforme necessário */
+}
+
+/* Animated text settings */
+p {
+  font-family: "Montserrat";
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin: 0; /* Remove margens */
+  display: inline; /* Faz com que as frases apareçam na mesma linha */
+}
+
+/* Style for each phrase */
+.phrase {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  border-right: solid 3px rgba(255, 255, 255, 0.75); /* Cursor */
+  animation: typing 5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Delay animation for each phrase */
+.phrase:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.phrase:nth-child(2) {
+  animation-delay: 5s; /* Atraso para a segunda frase */
+}
+
+.phrase:nth-child(3) {
+  animation-delay: 10s; /* Atraso para a terceira frase */
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/* Cursor blink effect */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
 }/*# sourceMappingURL=main.css.map */
