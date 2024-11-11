@@ -3,6 +3,16 @@
   font-family: "Montserrat";
 }
 
+
+.teste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -173,18 +183,21 @@ p {
     font-size: 30px;
   }
 }
+
 .container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
   padding-left: 50px;
+  max-width: 500px;
 }
 
 .output {
   font-family: "montserrat";
-  font-size: 24px;
+  font-size: 26px;
   color: white;
+  text-align: left;
 }
 
 .cursor::after {
@@ -223,8 +236,8 @@ p.cursor::after {
 }
 .video-container {
   position: relative;
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   margin: 50px auto;
 }
 
@@ -239,16 +252,13 @@ p.cursor::after {
   z-index: 1; // O vídeo fica no fundo
 }
 
+
 .button1 {
-  position: absolute;
+  margin-top: 20px; /* Adiciona espaço entre o texto e o botão */
   width: 300px;
   height: 40px;
   cursor: pointer;
   color: #000000;
   font-family: "Montserrat";
   font-size: 22px;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2; // Coloca o botão acima do vídeo
 }

@@ -6,7 +6,7 @@ var i = 0,
 
 // Typerwrite text content. Use a pipe to indicate the start of the second line "|".
 var textArray = [
-  " Transformamos ideias em sites impactantes:| feitos à mão em HTML, CSS e Javascript para a máxima performance e estilo!",
+  " Transformamos ideias em sites impactantes:| Feitos à mão em HTML, CSS e Javascript para a máxima performance e estilo!",
 ];
 
 // Speed (in milliseconds) of typing.
