@@ -242,4 +242,8 @@ p.cursor::after {
   color: #000000;
   font-family: "Montserrat";
   font-size: 22px;
+}
+
+#large-header {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */

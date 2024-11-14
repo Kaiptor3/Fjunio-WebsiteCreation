@@ -3,7 +3,6 @@
   font-family: "Montserrat";
 }
 
-
 .teste {
   display: flex;
   justify-content: center;
@@ -11,7 +10,6 @@
   gap: 20px;
   min-height: 100vh;
 }
-
 
 body {
   margin: 0;
@@ -252,7 +250,6 @@ p.cursor::after {
   z-index: 1; // O vídeo fica no fundo
 }
 
-
 .button1 {
   margin-top: 20px; /* Adiciona espaço entre o texto e o botão */
   width: 300px;
@@ -261,4 +258,7 @@ p.cursor::after {
   color: #000000;
   font-family: "Montserrat";
   font-size: 22px;
+}
+#large-header {
+  background-color: black;
 }
