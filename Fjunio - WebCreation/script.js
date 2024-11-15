@@ -90,3 +90,34 @@ function typeWriter(id, ar) {
     }
   }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const starfield = document.querySelector(".starfield");
+
+  // Função para gerar estrelas
+  function createStars() {
+    // Gerar 1855 estrelas
+    for (let i = 0; i < 1855; i++) {
+      const star = document.createElement("div");
+      star.classList.add("star");
+
+      // Posições aleatórias
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+
+      // Tamanho aleatório para as estrelas
+      const size = Math.random() * 2 + 1; // Estrelas entre 1px e 3px
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+
+      // Duração aleatória da animação para simular profundidade
+      const animationDuration = Math.random() * (100 - 50) + 50; // Durations between 50s and 100s
+      star.style.animationDuration = `${animationDuration}s`;
+
+      // Adicionar a estrela ao campo de estrelas
+      starfield.appendChild(star);
+    }
+  }
+
+  // Chamar a função para criar as estrelas inicialmente
+  createStars();
+});

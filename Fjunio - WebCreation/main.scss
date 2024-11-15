@@ -181,14 +181,16 @@ p {
     font-size: 30px;
   }
 }
-
 .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 100vh;
   padding-left: 50px;
-  max-width: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: -20px;
 }
 
 .output {
@@ -196,6 +198,8 @@ p {
   font-size: 26px;
   color: white;
   text-align: left;
+  flex: 1; // Ocupa o espaço disponível sem afetar o vídeo
+  min-width: 300px; // Define uma largura mínima para evitar que a frase empurre o vídeo
 }
 
 .cursor::after {
@@ -219,24 +223,23 @@ p.cursor::after {
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
+  0%,
   49% {
     opacity: 1;
   }
-  50% {
-    opacity: 0;
-  }
+  50%,
   100% {
     opacity: 0;
   }
 }
+
 .video-container {
   position: relative;
+  scale: 90%;
   width: 700px;
   height: 500px;
-  margin: 50px auto;
+  margin: 50px;
+  flex-shrink: 0; // Impede que o vídeo encolha ou seja afetado pela frase
 }
 
 .video-background {
@@ -259,6 +262,25 @@ p.cursor::after {
   font-family: "Montserrat";
   font-size: 22px;
 }
-#large-header {
-  background-color: black;
+.starfield {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateX(-100vw); /* Começa à esquerda */
+  }
+  100% {
+    transform: translateX(100vw); /* Termina à direita */
+  }
 }
