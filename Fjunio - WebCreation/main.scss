@@ -262,25 +262,3 @@ p.cursor::after {
   font-family: "Montserrat";
   font-size: 22px;
 }
-.starfield {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.star {
-  position: absolute;
-  background-color: white;
-  border-radius: 50%;
-  animation: moveStars 50s linear infinite;
-}
-
-@keyframes moveStars {
-  0% {
-    transform: translateX(-100vw); /* Começa à esquerda */
-  }
-  100% {
-    transform: translateX(100vw); /* Termina à direita */
-  }
-}
